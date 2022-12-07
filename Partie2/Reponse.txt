@@ -1,0 +1,19 @@
+Repérer les erreurs commises dans les instructions suivantes :
+class C < T > {
+  T x;
+  T[] t1;
+  T[] t2;
+  public static T inf;
+  public static int n;
+  void f() {
+    x = new T();
+    t2 = t1;
+    t2 = new T[5];
+}
+
+Réponses :
+  - 4ème ligne et 5ème ligne : Pas le droit de faire un tableau.
+  - 6ème ligne : Pas le doit de faire un static sur un type générique.
+  - 9ème ligne : On ne sait pas ce qu'on va lui donner en paramètre.
+  - 10ème ligne : Même problème que la ligne 4.
+  - 11ème ligne : ne fonctionne pas.
